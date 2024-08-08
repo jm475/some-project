@@ -1,13 +1,44 @@
-#root {
-
+:root {
+    --navyBlue: #1D4E89;
+    --Charcoal: #363636;
+    --ShadowEffectBlack: #191A23;
+    --OrangeText: #F79256;
+    --Gray: #D9D9D9;
 }
 
+
+h2 {
+    font-weight: bold;
+}
 
 #login-card {
-    background-color: purple;
+    background-color: var(--Charcoal);
+    min-width: 600px;
+    min-height: 500px;
+    box-shadow: -20px 20px 0px var(--ShadowEffectBlack);
+    border-radius: 45px;
+    color: var(--OrangeText);
 }
 
-.email {
+input {
+    min-width: 400px;
+    min-height: 40px;
+    border-radius: 15px;
+    background-color: var(--Gray);
+    box-shadow: 0px 5px 0px var(--ShadowEffectBlack);
+    border: 0;
+    font-size: 1.4rem;
+}
 
+/* Make the placeholder text orange */
+::placeholder {
+    color: var(--OrangeText);
+    font-family: 'Space Grotesk';
+    font-weight: bold;
+    opacity: 50%;
+    padding-left: 1rem;
+}
 
+#email {
+    margin-bottom: 22px;
 }

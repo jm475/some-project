@@ -12,27 +12,25 @@ const LoginPage = ({}) => {
     //   //onLogin(email, password);
     // };
 
-
-
     return (
         <div id="login-card">
           <h2>Login</h2>
           <form>
-            <div id="email">
-              <label htmlFor="email">Email:</label>
+            <div>
               <input
                 type="email"
                 id="email"
+                placeholder="Email Address"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 required
               />
             </div>
             <div>
-              <label htmlFor="password">Password:</label>
               <input
                 type="password"
                 id="password"
+                placeholder="Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
                 required

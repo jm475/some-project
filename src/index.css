@@ -1,0 +1,16 @@
+:root {
+    --navyBlue: #1D4E89;
+    --Charcoal: #363636;
+}
+
+
+html, body {
+    min-height: 100vh;
+    font-family: 'Space Grotesk';
+}
+
+
+/* Set the background color */
+body {
+   background-color: var(--navyBlue);
+}
