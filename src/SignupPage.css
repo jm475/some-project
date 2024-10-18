@@ -1,0 +1,83 @@
+:root {
+    --navyBlue: #1D4E89;
+    --Charcoal: #363636;
+    --ShadowEffectBlack: #191A23;
+    --OrangeText: #F79256;
+    --Gray: #D9D9D9;
+}
+
+
+h2 {
+    font-weight: bold;
+}
+
+#signup-card {
+    background-color: var(--Charcoal);
+    min-width: 600px;
+    min-height: 500px;
+    box-shadow: -20px 20px 0px var(--ShadowEffectBlack);
+    border-radius: 45px;
+    color: var(--OrangeText);
+}
+
+#signup-card form {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+}
+
+input {
+    min-width: 400px;
+    min-height: 40px;
+    border-radius: 15px;
+    background-color: var(--Gray);
+    box-shadow: 0px 5px 0px var(--ShadowEffectBlack);
+    border: 0;
+    font-size: 1.4rem;
+    padding-left: 1rem;
+    color: var(--OrangeText);
+}
+
+/* Make the placeholder text orange */
+::placeholder {
+    color: var(--OrangeText);
+    font-family: 'Space Grotesk';
+    font-weight: bold;
+    opacity: 50%;
+}
+
+#email {
+    margin-bottom: 22px;
+}
+
+#password {
+    margin-bottom: 22px;
+}
+
+#signup-button {
+    color: var(--ShadowEffectBlack);
+    font-family: 'Space Grotesk';
+    font-weight: bold;
+    font-size: 1.9rem;
+    min-width: 400px;
+    min-height: 50px;
+    margin-top: 45px;
+    border-radius: 15px;
+    border: none;
+    background: linear-gradient(to right, var(--navyBlue), var(--Gray), var(--OrangeText));
+}
+
+button:hover{
+    cursor: pointer;
+    scale: 1.03;
+}
+
+
+a {
+    color: var(--OrangeText);
+    font-family: 'Space Grotesk';
+}
+
+p {
+   margin-top: 67px; 
+}

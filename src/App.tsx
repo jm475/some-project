@@ -10,9 +10,9 @@ function App() {
 
   return (
     <div id="main">
-      {pageState === 'login' ? (<LoginPage setPageState={setPageState} />) : (<SignupPage />)}
-      <button onClick={() => setPageState('login')}>Go to Login</button>
-      <button onClick={() => setPageState('signup')}>Go to Signup</button>
+      {pageState === 'login' ? (<LoginPage setPageState={setPageState} />) : (<SignupPage setPageState={setPageState}/>)}
+      {/* <button onClick={() => setPageState('login')}>Go to Login</button>
+      <button onClick={() => setPageState('signup')}>Go to Signup</button> */}
     </div>
   )
 }
